@@ -162,6 +162,7 @@ const RecentWork = () => {
         >
           {/* Left strong circular gradient overlay */}
           <Box
+            className="hidden md:block"
             sx={{
               position: 'absolute',
               left: -2,
@@ -177,6 +178,7 @@ const RecentWork = () => {
           />
           {/* Right strong circular gradient overlay */}
           <Box
+            className="hidden md:block"
             sx={{
               position: 'absolute',
               right: 0,

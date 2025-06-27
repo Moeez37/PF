@@ -36,6 +36,7 @@ const Testimonials = () => {
       >
         {/* Left gradient overlay */}
         <Box
+          className="hidden md:block"
           sx={{
             position: 'absolute',
             left: -2,
@@ -50,6 +51,7 @@ const Testimonials = () => {
         />
         {/* Right gradient overlay */}
         <Box
+          className="hidden md:block"
           sx={{
             position: 'absolute',
             right: -2,

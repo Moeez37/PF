@@ -42,7 +42,7 @@ const Header = () => {
           ))}
         </nav>
         {/* Resume Button */}
-        <Button href={resumeButton.href} target={"_blank"} variant="primary" className="shadow-glass hover:bg-card-dark">
+        <Button href={resumeButton.href} target={"_blank"} variant="primary" className="shadow-glass hover:bg-card-dark !hidden md:!inline-flex">
           {resumeButton.label}
         </Button>
         {/* Mobile Menu Button */}
@@ -56,13 +56,13 @@ const Header = () => {
       </div>
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-overlay/95 shadow-glass animate-slide-down z-40">
+        <div className="md:hidden absolute top-full left-0 w-full bg-gray-700 shadow-glass animate-slide-down z-40">
           <nav className="flex flex-col gap-4 px-6 py-6">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-lg font-medium text-gray-800 hover:text-primary transition-colors"
+                className="text-lg font-medium text-white hover:text-primary transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
